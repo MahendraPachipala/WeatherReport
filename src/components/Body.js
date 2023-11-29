@@ -31,18 +31,18 @@ export default function Body({city}) {
     <div className="templates">
     <div className="today">
      <h3>Today in {data.resolvedAddress}</h3>
-      <Days img={data.days[0].icon} climate={climate} temp={temp} />
+      <Days img={data.days[0].icon} climate={climate} temp={temp} date="Today" />
     </div>
-      <Days img={data.days[1].icon} climate={data.days[1].conditions} temp={data.days[1].temp} />
-      <Days img={data.days[2].icon} climate={data.days[2].conditions} temp={data.days[2].temp} />
-      <Days img={data.days[3].icon} climate={data.days[3].conditions} temp={data.days[3].temp} />
-      <Days img={data.days[4].icon} climate={data.days[4].conditions} temp={data.days[4].temp} />
-      <Days img={data.days[5].icon} climate={data.days[5].conditions} temp={data.days[5].temp} />
-      <Days img={data.days[6].icon} climate={data.days[6].conditions} temp={data.days[6].temp} />
-      <Days img={data.days[7].icon} climate={data.days[7].conditions} temp={data.days[7].temp} />
-
-      
-
+    
+    <div>
+    <h2 id ="week">Weekly Forecast</h2>
+      <Days img={data.days[1].icon} climate={data.days[1].conditions} temp={data.days[1].temp} date = {data.days[1].datetime} />
+      <Days img={data.days[2].icon} climate={data.days[2].conditions} temp={data.days[2].temp} date = {data.days[1].datetime}/>
+      <Days img={data.days[3].icon} climate={data.days[3].conditions} temp={data.days[3].temp} date = {data.days[1].datetime}/>
+      <Days img={data.days[4].icon} climate={data.days[4].conditions} temp={data.days[4].temp} date = {data.days[1].datetime}/>
+      <Days img={data.days[5].icon} climate={data.days[5].conditions} temp={data.days[5].temp} date = {data.days[1].datetime}/>
+      <Days img={data.days[6].icon} climate={data.days[6].conditions} temp={data.days[6].temp} date = {data.days[1].datetime}/>
+      </div>
     </div>
   );
 }

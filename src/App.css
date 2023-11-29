@@ -2,7 +2,7 @@
     margin:30px 90px;
     display:inline-block;
     padding:10px;
-    box-shadow: 0.1px 1px 1px 1px black;
+    
     border-radius: 10px;
 }
 .templates{
@@ -21,4 +21,38 @@
     height:100px;
     width:100px;
     border-radius: 100%;
+}
+#week{
+    color:blue
+}
+
+@media only screen and (max-width: 600px) {
+    .days {
+        width: 30%;
+        margin: 10px; /* Adjusted margin for better spacing */
+    }
+
+    #icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+
+
+
+    .templates {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .templates div {
+        padding: 0;
+        margin: 3px;
+        text-align: center; 
+    }
+
+    .today{
+        font-size: 22px;
+        font-weight: bold;
+    }
 }

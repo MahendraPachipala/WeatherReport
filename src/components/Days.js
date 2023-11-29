@@ -22,7 +22,12 @@ export default function Days(props) {
         <p>{props.climate}</p>
       </div>
       <div>
-        <p>{props.temp}</p>
+        <p>{props.temp}°c</p>
+      </div>
+      <div>
+        <p>
+          {props.date}
+        </p>
       </div>
     </div>
   );
