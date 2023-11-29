@@ -1,0 +1,16 @@
+import Header from "./Header"
+import Body from "./Body"
+import {React,useState} from "react";
+export default function Weather(){
+    const [searchvalue,setsearchvalue] = useState("");
+    const handleSearch = (value)=>{
+        setsearchvalue(value);
+        console.log(value);
+    }
+    return(
+        <div>
+            <Header onSearch={handleSearch}/>
+            <Body city={searchvalue}/>
+        </div>
+    )
+}
