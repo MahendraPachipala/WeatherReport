@@ -60,7 +60,7 @@ export default function Body({ city }) {
         <Days img={data.days[0].icon} climate={climate} temp={temp} date="Today" />
       </div>
 
-      <div>
+      <div id="container">
         <h2 id="week">Weekly Forecast</h2>
         <Days img={data.days[1].icon} climate={data.days[1].conditions} temp={data.days[1].temp} date = {data.days[1].datetime} />
       <Days img={data.days[2].icon} climate={data.days[2].conditions} temp={data.days[2].temp} date = {data.days[1].datetime}/>
