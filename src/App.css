@@ -1,13 +1,25 @@
+body{
+  background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+
 .days{
     margin:30px 90px;
     display:inline-block;
     padding:10px;
-    
     border-radius: 10px;
 }
+
 .templates{
     text-align: center;
 }
+
 .templates div{
     text-align: center;
 }
@@ -29,7 +41,7 @@
 @media only screen and (max-width: 600px) {
     .days {
         width: 30%;
-        margin: 10px; /* Adjusted margin for better spacing */
+        margin: 10px; 
     }
 
     #icon {
@@ -54,5 +66,8 @@
     .today{
         font-size: 22px;
         font-weight: bold;
+    }
+    h3{
+        margin:20px;
     }
 }

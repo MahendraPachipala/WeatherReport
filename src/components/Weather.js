@@ -5,7 +5,6 @@ export default function Weather(){
     const [searchvalue,setsearchvalue] = useState("");
     const handleSearch = (value)=>{
         setsearchvalue(value);
-        console.log(value);
     }
     return(
         <div>

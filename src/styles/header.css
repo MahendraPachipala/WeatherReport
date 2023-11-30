@@ -5,7 +5,6 @@
 .header{
     display:grid;
     grid-template-columns: 30% 30% 40%;
-    background-image: linear-gradient(blue,rgb(95, 95, 205));
     color:white;
     flex-wrap: wrap;
 }
@@ -22,6 +21,7 @@ font-size: 40px;
 }
 #search{
     margin-top:4px;
+    color:black;
     width:150px;
     font-size: 20px;
     height:30px;
